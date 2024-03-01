@@ -54,13 +54,13 @@ public class SolarSystem2 extends JFrame implements ActionListener {
         sunX = width / 2;
         sunY = height / 2;
 
-        g2d.setColor(Color.ORANGE);
+        g2d.setColor(Color.RED);
         g2d.fillOval(sunX - 30, sunY - 30, 80, 80);
 
         double planetX = sunX + orbitRadius * Math.cos(Math.toRadians(angle));
         double planetY = sunY + orbitRadius * Math.sin(Math.toRadians(angle));
 
-        g2d.setColor(Color.GREEN);
+        g2d.setColor(Color.YELLOW);
         g2d.fillOval((int) (planetX - planetRadius), (int) (planetY - planetRadius), 2 * planetRadius,
                 2 * planetRadius);
 
@@ -69,6 +69,6 @@ public class SolarSystem2 extends JFrame implements ActionListener {
     }
 
     public static void main(String[] argv) {
-        SwingUtilities.invokeLater(() -> new No2());
+        SwingUtilities.invokeLater(() -> new SolarSystem2());
     }
 }

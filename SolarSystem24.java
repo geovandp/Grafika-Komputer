@@ -48,11 +48,11 @@ public class SolarSystem24 extends Frame implements ActionListener {
         double planetX = sunX + orbitRadius * Math.cos(Math.toRadians(angle));
         double planetY = sunY + orbitRadius * Math.sin(Math.toRadians(angle));
 
-        // Draw the Earth-like planet in green
+        // Planet in red
         g2d.setColor(new Color(0, 128, 0));
         g2d.fillOval((int) (planetX - planetRadius), (int) (planetY - planetRadius), 2 * planetRadius, 2 * planetRadius);
 
-        // Draw the closest point to the sun on the planet in red
+        // Planet in yellow
         g2d.setColor(Color.RED);
         g2d.fillOval((int) (closestPointToSun.x - 3), (int) (closestPointToSun.y - 3), 6, 6);
 
@@ -65,7 +65,7 @@ public class SolarSystem24 extends Frame implements ActionListener {
     }
 
     public static void main(String[] argv) {
-        No4 f = new No4();
+        SolarSystem24 f = new SolarSystem24();
         f.setTitle("Orbit System Animation");
         f.setSize(500, 500);
         f.setVisible(true);

@@ -23,7 +23,7 @@ public class BeatingHeart3 extends Frame implements Runnable {
     }
 
     public void paint(Graphics g) {
-        g.setColor(Color.BLACK); // Set the line's color
+        g.setColor(Color.BLUE); // Set the line's color
 
         Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
@@ -36,7 +36,7 @@ public class BeatingHeart3 extends Frame implements Runnable {
         gp2.lineTo(520, 157);
         g2d.draw(gp2);
 
-        g.setColor(Color.RED); // Set the dot's color
+        g.setColor(Color.GREEN); // Set the dot's color
         g.fillOval(x, y, DotSize, DotSize);
     }
 
@@ -82,7 +82,7 @@ public class BeatingHeart3 extends Frame implements Runnable {
     }
 
     public static void main(String[] args) {
-        ex frame = new ex();
+        BeatingHeart3 frame = new BeatingHeart3();
         frame.setTitle("Beating Heart");
         frame.setSize(500, 300);
         frame.setLocationRelativeTo(null); // Center the frame

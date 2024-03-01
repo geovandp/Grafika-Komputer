@@ -41,8 +41,7 @@ public class Rectangle1 extends Frame {
         drawSimpleCoordinateSystem(350, 250, g2d);
     }
 
-    public static void drawSimpleCoordinateSystem(int xmax, int ymax,
-            Graphics2D g2d) {
+    public static void drawSimpleCoordinateSystem(int xmax, int ymax, Graphics2D g2d) {
         int xOffset = 30;
         int yOffset = 50;
         int step = 20;
